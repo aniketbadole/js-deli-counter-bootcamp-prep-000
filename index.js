@@ -1,7 +1,14 @@
 function takeANumber(line, name) {
-  var pos = line.length + 1
+  //var pos = line.length + 1
   line.push(name)
-  return (`Welcome, ${name}. You are number ${pos} in line.`)
+  return (`Welcome, ${name}. You are number ${line.length} in line.`)
+}
+
+var counter = 0
+function takeANumber(line) {
+  counter++
+  line.push(counter)
+  return (`Welcome to the deli. You are number ${counter}`)
 }
 
 function nowServing(katzDeliLine) {
